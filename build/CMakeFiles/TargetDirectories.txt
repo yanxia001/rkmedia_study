@@ -1,0 +1,3 @@
+/home/hxy/201/0701rkmidea/build/CMakeFiles/rebuild_cache.dir
+/home/hxy/201/0701rkmidea/build/CMakeFiles/edit_cache.dir
+/home/hxy/201/0701rkmidea/build/CMakeFiles/mymain.dir
