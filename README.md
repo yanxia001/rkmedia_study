@@ -135,6 +135,48 @@ RK_MPI_SYS_Init()
 - 编译产物 `build/mymain` 已交叉编译为 ARM 架构，无法在 x86 主机上直接运行
 - SDK 路径中的 `RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011` 是示例版本号，其他版本可能需要调整头文件和库的路径
 
+## 函数功能说明
+
+### `src/main.cpp` — 程序入口
+
+| 函数 | 说明 |
+|------|------|
+| `main()` | 程序入口。初始化系统→ISP→RTSP→VI→VENC→RGA→AI→AENC，绑定各通道并注册回调，最后进入死循环等待 |
+| `sig_fun(int)` | 信号处理函数，捕获 Ctrl+C（SIGINT），停止 ISP 并关闭 VI 通道后退出 |
+
+### `src/hxy_media.cpp` — 视频采集 / 编码 / RGA / RTSP
+
+| 函数 | 说明 |
+|------|------|
+| `vi_set()` | 配置 VI 通道 0：从 `rkispp_scale0` 节点获取 1920×1080 NV12 图像，设置缓存帧数为 2，使能并启动流 |
+| `vi_get_frame()` | 从 VI 通道获取一帧原始数据，写入文件（调试用，当前未使用） |
+| `vi_Outcb_fun(MEDIA_BUFFER ch)` | VI 回调函数（测试用），打印获取到的帧数据大小 |
+| `vi_cd()` | 注册 VI 通道的输出回调 `vi_Outcb_fun`（调试用，当前未使用） |
+| `venc_set(IMAGE_TYPE_E image, int w, int h)` | 创建 VENC 通道 0：H.265 编码，VBR 码率控制，30fps，GOP=30。参数指定输入图像格式和宽高 |
+| `vi_venc_fun(MEDIA_BUFFER ch)` | VENC 编码回调函数。将编码后的 H.265 码流通过 RTSP 推流出去（`rtsp_tx_video`），同时驱动 `rtsp_do_event` |
+| `venc_reg()` | 注册 VENC 通道 0 的输出回调 `vi_venc_fun`，每编码完一帧触发一次 |
+| `vi_to_venc()` | 绑定 VI→VENC，系统自动将 VI 采集的帧送入编码器（跳过 RGA，当前已注释） |
+| `rga_venc()` | 创建 RGA 通道 0：NV12→BGR888 色彩转换 + 1920×1080→640×480 缩放，启用缓存池（3 帧） |
+| `rga_OutCbFunc(MEDIA_BUFFER mb)` | RGA 回调函数。RGA 处理完成后触发，用 OpenCV 在帧上画 "hxy" 文字标注，再手动 `SendMediaBuffer` 送入 VENC |
+| `vi_rga_bind_register_cb()` | 绑定 VI→RGA 并注册 RGA 回调。走 **拦截路径**：VI 帧经 RGA 转换后回到回调，由回调手动送入 VENC（可插入 OpenCV 处理） |
+| `vi_to_rga_to_venc()` | 绑定 VI→RGA→VENC **系统自动转发路径**。帧自动流转，无回调拦截，无法插入 OpenCV 处理（当前已注释） |
+| `init_rtsp()` | 初始化 RTSP 服务：创建端口 554 的 RTSP 服务端，新建 `/9203` 会话，设置 H.265 视频流 + G711A 音频流并同步时间戳 |
+
+### `src/hxy_adio.cpp` — 音频采集 / 编码 / 解码 / 播放
+
+| 函数 | 说明 |
+|------|------|
+| `ai_set()` | 配置 AI 通道 0：从 `default:CARD=Device` 采集音频，8000Hz / 单声道 / S16 / 每帧 1024 采样点，使能并启动流 |
+| `aenc_ai_set()` | 创建 AENC 通道 0：G711A 编码，64000bps 码率，8000Hz / 单声道 / 1024 采样点 |
+| `ai_to_aenc()` | 绑定 AI→AENC，将采集的原始 PCM 音频自动送入 G711A 编码器 |
+| `aenc_call()` | 注册 AENC 通道 0 的输出回调 `aenc_call_fun`，每编码完一帧音频触发一次 |
+| `aenc_call_fun(MEDIA_BUFFER mb)` | AENC 编码回调函数。将编码后的 G711A 音频帧通过 RTSP 推流出去（`rtsp_tx_audio`），同时驱动 `rtsp_do_event` |
+| `ao_set()` | 配置 AO 通道 1：通过 `rockchipi2s0sou` I2S 接口输出音频，8000Hz / 单声道 / S16（当前已注释） |
+| `ai_to_ao()` | 绑定 AI→AO，实现麦克风→扬声器的音频直通环回（当前已注释） |
+| `adec_set()` | 创建 ADEC 通道 0：G711A 解码，8000Hz / 单声道（当前已注释） |
+| `adec_to_ao()` | 绑定 ADEC→AO，将解码后的音频输出到扬声器（当前已注释） |
+| `test()` | 从文件 `./9203` 循环读取 G711A 编码数据，封装为 `MEDIA_BUFFER` 送入 ADEC 解码后播放（当前已注释） |
+
 #  0706 新添加
 
 - 音频编码格式：mp3
