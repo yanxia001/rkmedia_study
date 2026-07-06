@@ -5,4 +5,10 @@
 void ai_set();
 void ao_set();
 void ai_to_ao();
+void aenc_ai_set();
+void ai_to_aenc();
+void aenc_call();
+void adec_set();
+void adec_to_ao();
+void test();
 #endif // DEBUG

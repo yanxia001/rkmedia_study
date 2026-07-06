@@ -16,6 +16,8 @@ extern "C"
 
 #include "common/sample_common.h"
 #include "rkmedia_api.h" 
+#include "librtsp/rtsp_demo.h"
+
 }
 
 #include "opencv2/opencv.hpp"

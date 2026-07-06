@@ -31,6 +31,8 @@ common/sample_common.h
 ../include/common/sample_common.h
 rkmedia_api.h
 ../include/rkmedia_api.h
+librtsp/rtsp_demo.h
+../include/librtsp/rtsp_demo.h
 opencv2/opencv.hpp
 ../include/opencv2/opencv.hpp
 
@@ -38,7 +40,13 @@ opencv2/opencv.hpp
 common.h
 ../include/common.h
 
-/home/hxy/201/0701rkmidea/src/hxy_adio.cpp
+../include/hxy_media.h
+
+/home/hxy/201/0701rkmidea/src/main.cpp
+common.h
+/home/hxy/201/0701rkmidea/src/common.h
+hxy_media.h
+/home/hxy/201/0701rkmidea/src/hxy_media.h
 hxy_audio.h
 /home/hxy/201/0701rkmidea/src/hxy_audio.h
 
@@ -2892,5 +2900,9 @@ rkmedia_common.h
 rk_aiq_user_api_imgproc.h
 -
 rk_aiq_user_api_sysctl.h
+-
+
+/home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/librtsp/rtsp_demo.h
+stdint.h
 -
 

@@ -820,6 +820,7 @@ CMakeFiles/mymain.dir/src/hxy_adio.cpp.o: /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2
 CMakeFiles/mymain.dir/src/hxy_adio.cpp.o: /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/time.h
 CMakeFiles/mymain.dir/src/hxy_adio.cpp.o: /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/unistd.h
 CMakeFiles/mymain.dir/src/hxy_adio.cpp.o: /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_common.h
+CMakeFiles/mymain.dir/src/hxy_adio.cpp.o: /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/librtsp/rtsp_demo.h
 
 CMakeFiles/mymain.dir/src/hxy_media.cpp.o: ../include/common.h
 CMakeFiles/mymain.dir/src/hxy_media.cpp.o: ../src/hxy_media.cpp
@@ -1203,6 +1204,7 @@ CMakeFiles/mymain.dir/src/hxy_media.cpp.o: /home/hxy/RV1126_RV1109_LINUX_SDK_V2.
 CMakeFiles/mymain.dir/src/hxy_media.cpp.o: /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/time.h
 CMakeFiles/mymain.dir/src/hxy_media.cpp.o: /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/unistd.h
 CMakeFiles/mymain.dir/src/hxy_media.cpp.o: /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_common.h
+CMakeFiles/mymain.dir/src/hxy_media.cpp.o: /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/librtsp/rtsp_demo.h
 
 CMakeFiles/mymain.dir/src/main.cpp.o: ../include/common.h
 CMakeFiles/mymain.dir/src/main.cpp.o: ../include/hxy_audio.h
@@ -1588,4 +1590,5 @@ CMakeFiles/mymain.dir/src/main.cpp.o: /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1
 CMakeFiles/mymain.dir/src/main.cpp.o: /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/time.h
 CMakeFiles/mymain.dir/src/main.cpp.o: /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/unistd.h
 CMakeFiles/mymain.dir/src/main.cpp.o: /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_common.h
+CMakeFiles/mymain.dir/src/main.cpp.o: /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/librtsp/rtsp_demo.h
 

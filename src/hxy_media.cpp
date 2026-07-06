@@ -1,5 +1,6 @@
 #include "common.h"
-
+rtsp_demo_handle g_rtsplive = NULL;
+rtsp_session_handle g_rtsp_session;
 void vi_set()
 {
     VI_CHN_ATTR_S pstChnAttr;
@@ -100,18 +101,25 @@ int num  = 0;
 void vi_venc_fun(MEDIA_BUFFER ch)
 {
     // 记录计数
-    if (num < 300)
-    {
-        // 只有前 300 帧才写入文件
-        fwrite(RK_MPI_MB_GetPtr(ch), RK_MPI_MB_GetSize(ch), 1, fp);
-        printf("venc 获取到的画面的大小:%d  num= %d\n", RK_MPI_MB_GetSize(ch), num);
-        num++;
-    }
-    else
-    {
-       exit(0);
-    }
+    // if (num < 300)
+    // {
+    //     // 只有前 300 帧才写入文件
+    //     fwrite(RK_MPI_MB_GetPtr(ch), RK_MPI_MB_GetSize(ch), 1, fp);
+    //     printf("venc 获取到的画面的大小:%d  num= %d\n", RK_MPI_MB_GetSize(ch), num);
+    //     num++;
+    // }
+    // else
+    // {
+    //    exit(0);
+    // }
+        if (g_rtsplive && g_rtsp_session) {
+        rtsp_tx_video(g_rtsp_session,(const uint8_t *)RK_MPI_MB_GetPtr(ch), RK_MPI_MB_GetSize(ch),
+                  RK_MPI_MB_GetTimestamp(ch));
+        rtsp_do_event(g_rtsplive);
+  }
+
     RK_MPI_MB_ReleaseBuffer(ch);
+    
 
  
 }
@@ -153,7 +161,7 @@ void rga_venc()
     ch.stImgIn.u32VirStride =1080;//虚宽
 
 
-    ch.stImgOut.imgType = IMAGE_TYPE_RGB888; //输出图像类型
+    ch.stImgOut.imgType = IMAGE_TYPE_BGR888; //输出图像类型
     ch.stImgOut.u32X =0;
     ch.stImgOut.u32Y = 0;
     ch.stImgOut.u32Width =  640;
@@ -189,7 +197,7 @@ void vi_to_rga_to_venc()
 
     RK_MPI_SYS_Bind(&vi_ch,&rga_ch);//连接
 
-    //RK_MPI_SYS_Bind(&rga_ch,&venc_ch);
+    RK_MPI_SYS_Bind(&rga_ch,&venc_ch);
 
 
 }
@@ -219,3 +227,19 @@ void vi_rga_bind_register_cb()
     RK_MPI_SYS_Bind(&vi_chn,&rga_chn);
     RK_MPI_SYS_RegisterOutCb(&rga_chn,rga_OutCbFunc);
 }
+
+ 
+
+
+void init_rtsp()
+{
+    g_rtsplive = create_rtsp_demo(554);
+    g_rtsp_session = rtsp_new_session(g_rtsplive, "/9203");// rtsp://ip/9203
+    //设置视频流
+    rtsp_set_video(g_rtsp_session, RTSP_CODEC_ID_VIDEO_H265, NULL, 0);
+    rtsp_sync_video_ts(g_rtsp_session, rtsp_get_reltime(), rtsp_get_ntptime());
+    //设置音频流
+    rtsp_set_audio(g_rtsp_session,RTSP_CODEC_ID_AUDIO_G711A,NULL, 0);
+    rtsp_sync_audio_ts(g_rtsp_session, rtsp_get_reltime(), rtsp_get_ntptime());
+
+}//推音视频流
