@@ -74,12 +74,27 @@ void aenc_ai_set()
     ch.stAencG711A.u32Channels = 1;
     ch.stAencG711A.u32NbSample = 1024;
     ch.stAencG711A.u32SampleRate = 8000;
+    RK_MPI_AENC_CreateChn(1,&ch);
     int ret = RK_MPI_AENC_CreateChn(0,&ch);//编码通道 结构体
     if(ret)
     {
         printf("创建音频编码通道错误！！！！");
     }
 }
+
+
+
+
+void ai_tofengzhuang_aenc()
+{
+    MPP_CHN_S ai,aenc;
+    ai.enModId = RK_ID_AI;
+    ai.s32ChnId = 0 ;
+    aenc.enModId = RK_ID_AENC;
+    aenc.s32ChnId = 1;
+    RK_MPI_SYS_Bind(&ai,&aenc);
+}
+
 
 
 void ai_to_aenc()
@@ -109,7 +124,7 @@ void aenc_call()
 {
     MPP_CHN_S aenc;
     aenc.enModId = RK_ID_AENC;
-    aenc.s32ChnId = 0;
+    aenc.s32ChnId = 1;
     RK_MPI_SYS_RegisterOutCb(&aenc,aenc_call_fun);
 }
 

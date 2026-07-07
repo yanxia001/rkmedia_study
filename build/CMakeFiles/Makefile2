@@ -74,12 +74,12 @@ clean: CMakeFiles/mymain.dir/clean
 CMakeFiles/mymain.dir/all:
 	$(MAKE) -f CMakeFiles/mymain.dir/build.make CMakeFiles/mymain.dir/depend
 	$(MAKE) -f CMakeFiles/mymain.dir/build.make CMakeFiles/mymain.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hxy/201/0701rkmidea/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target mymain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hxy/201/0701rkmidea/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target mymain"
 .PHONY : CMakeFiles/mymain.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mymain.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hxy/201/0701rkmidea/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hxy/201/0701rkmidea/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mymain.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hxy/201/0701rkmidea/build/CMakeFiles 0
 .PHONY : CMakeFiles/mymain.dir/rule

@@ -57,9 +57,22 @@ include CMakeFiles/mymain.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/mymain.dir/flags.make
 
+CMakeFiles/mymain.dir/src/fengzhuang.cpp.o: CMakeFiles/mymain.dir/flags.make
+CMakeFiles/mymain.dir/src/fengzhuang.cpp.o: ../src/fengzhuang.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hxy/201/0701rkmidea/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mymain.dir/src/fengzhuang.cpp.o"
+	/home/hxy//RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//bin/arm-linux-gnueabihf-g++ --sysroot=/home/hxy//RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//arm-buildroot-linux-gnueabihf/sysroot  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mymain.dir/src/fengzhuang.cpp.o -c /home/hxy/201/0701rkmidea/src/fengzhuang.cpp
+
+CMakeFiles/mymain.dir/src/fengzhuang.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mymain.dir/src/fengzhuang.cpp.i"
+	/home/hxy//RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//bin/arm-linux-gnueabihf-g++ --sysroot=/home/hxy//RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//arm-buildroot-linux-gnueabihf/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hxy/201/0701rkmidea/src/fengzhuang.cpp > CMakeFiles/mymain.dir/src/fengzhuang.cpp.i
+
+CMakeFiles/mymain.dir/src/fengzhuang.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mymain.dir/src/fengzhuang.cpp.s"
+	/home/hxy//RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//bin/arm-linux-gnueabihf-g++ --sysroot=/home/hxy//RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//arm-buildroot-linux-gnueabihf/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hxy/201/0701rkmidea/src/fengzhuang.cpp -o CMakeFiles/mymain.dir/src/fengzhuang.cpp.s
+
 CMakeFiles/mymain.dir/src/hxy_adio.cpp.o: CMakeFiles/mymain.dir/flags.make
 CMakeFiles/mymain.dir/src/hxy_adio.cpp.o: ../src/hxy_adio.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hxy/201/0701rkmidea/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mymain.dir/src/hxy_adio.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hxy/201/0701rkmidea/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mymain.dir/src/hxy_adio.cpp.o"
 	/home/hxy//RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//bin/arm-linux-gnueabihf-g++ --sysroot=/home/hxy//RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//arm-buildroot-linux-gnueabihf/sysroot  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mymain.dir/src/hxy_adio.cpp.o -c /home/hxy/201/0701rkmidea/src/hxy_adio.cpp
 
 CMakeFiles/mymain.dir/src/hxy_adio.cpp.i: cmake_force
@@ -72,7 +85,7 @@ CMakeFiles/mymain.dir/src/hxy_adio.cpp.s: cmake_force
 
 CMakeFiles/mymain.dir/src/hxy_media.cpp.o: CMakeFiles/mymain.dir/flags.make
 CMakeFiles/mymain.dir/src/hxy_media.cpp.o: ../src/hxy_media.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hxy/201/0701rkmidea/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mymain.dir/src/hxy_media.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hxy/201/0701rkmidea/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mymain.dir/src/hxy_media.cpp.o"
 	/home/hxy//RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//bin/arm-linux-gnueabihf-g++ --sysroot=/home/hxy//RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//arm-buildroot-linux-gnueabihf/sysroot  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mymain.dir/src/hxy_media.cpp.o -c /home/hxy/201/0701rkmidea/src/hxy_media.cpp
 
 CMakeFiles/mymain.dir/src/hxy_media.cpp.i: cmake_force
@@ -85,7 +98,7 @@ CMakeFiles/mymain.dir/src/hxy_media.cpp.s: cmake_force
 
 CMakeFiles/mymain.dir/src/main.cpp.o: CMakeFiles/mymain.dir/flags.make
 CMakeFiles/mymain.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hxy/201/0701rkmidea/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mymain.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hxy/201/0701rkmidea/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mymain.dir/src/main.cpp.o"
 	/home/hxy//RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//bin/arm-linux-gnueabihf-g++ --sysroot=/home/hxy//RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//arm-buildroot-linux-gnueabihf/sysroot  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mymain.dir/src/main.cpp.o -c /home/hxy/201/0701rkmidea/src/main.cpp
 
 CMakeFiles/mymain.dir/src/main.cpp.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/mymain.dir/src/main.cpp.s: cmake_force
 
 CMakeFiles/mymain.dir/home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_common_isp.c.o: CMakeFiles/mymain.dir/flags.make
 CMakeFiles/mymain.dir/home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_common_isp.c.o: /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_common_isp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hxy/201/0701rkmidea/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mymain.dir/home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_common_isp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hxy/201/0701rkmidea/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mymain.dir/home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_common_isp.c.o"
 	/home/hxy//RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//bin/arm-linux-gnueabihf-gcc --sysroot=/home/hxy//RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mymain.dir/home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_common_isp.c.o   -c /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_common_isp.c
 
 CMakeFiles/mymain.dir/home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_common_isp.c.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/mymain.dir/home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/externa
 
 CMakeFiles/mymain.dir/home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_fake_isp.c.o: CMakeFiles/mymain.dir/flags.make
 CMakeFiles/mymain.dir/home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_fake_isp.c.o: /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_fake_isp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hxy/201/0701rkmidea/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mymain.dir/home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_fake_isp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hxy/201/0701rkmidea/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/mymain.dir/home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_fake_isp.c.o"
 	/home/hxy//RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//bin/arm-linux-gnueabihf-gcc --sysroot=/home/hxy//RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mymain.dir/home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_fake_isp.c.o   -c /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_fake_isp.c
 
 CMakeFiles/mymain.dir/home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_fake_isp.c.i: cmake_force
@@ -124,6 +137,7 @@ CMakeFiles/mymain.dir/home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/externa
 
 # Object files for target mymain
 mymain_OBJECTS = \
+"CMakeFiles/mymain.dir/src/fengzhuang.cpp.o" \
 "CMakeFiles/mymain.dir/src/hxy_adio.cpp.o" \
 "CMakeFiles/mymain.dir/src/hxy_media.cpp.o" \
 "CMakeFiles/mymain.dir/src/main.cpp.o" \
@@ -133,6 +147,7 @@ mymain_OBJECTS = \
 # External object files for target mymain
 mymain_EXTERNAL_OBJECTS =
 
+mymain: CMakeFiles/mymain.dir/src/fengzhuang.cpp.o
 mymain: CMakeFiles/mymain.dir/src/hxy_adio.cpp.o
 mymain: CMakeFiles/mymain.dir/src/hxy_media.cpp.o
 mymain: CMakeFiles/mymain.dir/src/main.cpp.o
@@ -140,7 +155,7 @@ mymain: CMakeFiles/mymain.dir/home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011
 mymain: CMakeFiles/mymain.dir/home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_fake_isp.c.o
 mymain: CMakeFiles/mymain.dir/build.make
 mymain: CMakeFiles/mymain.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hxy/201/0701rkmidea/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable mymain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hxy/201/0701rkmidea/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable mymain"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mymain.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

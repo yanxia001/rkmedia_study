@@ -40,13 +40,7 @@ opencv2/opencv.hpp
 common.h
 ../include/common.h
 
-../include/hxy_media.h
-
-/home/hxy/201/0701rkmidea/src/main.cpp
-common.h
-/home/hxy/201/0701rkmidea/src/common.h
-hxy_media.h
-/home/hxy/201/0701rkmidea/src/hxy_media.h
+/home/hxy/201/0701rkmidea/src/hxy_adio.cpp
 hxy_audio.h
 /home/hxy/201/0701rkmidea/src/hxy_audio.h
 

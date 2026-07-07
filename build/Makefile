@@ -177,6 +177,33 @@ home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/com
 	$(MAKE) -f CMakeFiles/mymain.dir/build.make CMakeFiles/mymain.dir/home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_fake_isp.c.s
 .PHONY : home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_fake_isp.c.s
 
+src/fengzhuang.o: src/fengzhuang.cpp.o
+
+.PHONY : src/fengzhuang.o
+
+# target to build an object file
+src/fengzhuang.cpp.o:
+	$(MAKE) -f CMakeFiles/mymain.dir/build.make CMakeFiles/mymain.dir/src/fengzhuang.cpp.o
+.PHONY : src/fengzhuang.cpp.o
+
+src/fengzhuang.i: src/fengzhuang.cpp.i
+
+.PHONY : src/fengzhuang.i
+
+# target to preprocess a source file
+src/fengzhuang.cpp.i:
+	$(MAKE) -f CMakeFiles/mymain.dir/build.make CMakeFiles/mymain.dir/src/fengzhuang.cpp.i
+.PHONY : src/fengzhuang.cpp.i
+
+src/fengzhuang.s: src/fengzhuang.cpp.s
+
+.PHONY : src/fengzhuang.s
+
+# target to generate assembly for a file
+src/fengzhuang.cpp.s:
+	$(MAKE) -f CMakeFiles/mymain.dir/build.make CMakeFiles/mymain.dir/src/fengzhuang.cpp.s
+.PHONY : src/fengzhuang.cpp.s
+
 src/hxy_adio.o: src/hxy_adio.cpp.o
 
 .PHONY : src/hxy_adio.o
@@ -273,6 +300,9 @@ help:
 	@echo "... home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_fake_isp.o"
 	@echo "... home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_fake_isp.i"
 	@echo "... home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_fake_isp.s"
+	@echo "... src/fengzhuang.o"
+	@echo "... src/fengzhuang.i"
+	@echo "... src/fengzhuang.s"
 	@echo "... src/hxy_adio.o"
 	@echo "... src/hxy_adio.i"
 	@echo "... src/hxy_adio.s"

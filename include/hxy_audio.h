@@ -11,4 +11,5 @@ void aenc_call();
 void adec_set();
 void adec_to_ao();
 void test();
+void ai_tofengzhuang_aenc();
 #endif // DEBUG

@@ -12,6 +12,9 @@ void rga_venc();
 void vi_to_rga_to_venc();
 void vi_rga_bind_register_cb();
 void init_rtsp();
+void venc_fengzhaung_reg();
+
+void vi_todengzhuang_venc();
 #endif
 
 

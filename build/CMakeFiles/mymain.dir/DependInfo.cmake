@@ -36,6 +36,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   ".././include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/hxy/201/0701rkmidea/src/fengzhuang.cpp" "/home/hxy/201/0701rkmidea/build/CMakeFiles/mymain.dir/src/fengzhuang.cpp.o"
   "/home/hxy/201/0701rkmidea/src/hxy_adio.cpp" "/home/hxy/201/0701rkmidea/build/CMakeFiles/mymain.dir/src/hxy_adio.cpp.o"
   "/home/hxy/201/0701rkmidea/src/hxy_media.cpp" "/home/hxy/201/0701rkmidea/build/CMakeFiles/mymain.dir/src/hxy_media.cpp.o"
   "/home/hxy/201/0701rkmidea/src/main.cpp" "/home/hxy/201/0701rkmidea/build/CMakeFiles/mymain.dir/src/main.cpp.o"

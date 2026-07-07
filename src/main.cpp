@@ -2,7 +2,7 @@
 #include "hxy_media.h"  
 #include "hxy_audio.h"
 
-
+#include "fengzhuang.h"
 FILE *fp ;
 void sig_fun(int)
 {
@@ -50,21 +50,25 @@ int main()
     // test();
 
 
-    init_rtsp();
+    init_rtsp();//推流
     
     vi_set();
-    venc_set(IMAGE_TYPE_RGB888,640,480);
-    //vi_to_venc();
-    rga_venc();
+    venc_set(IMAGE_TYPE_NV12,1920,1080);
+    vi_to_venc();
+    vi_todengzhuang_venc();
+    //rga_venc();
     //vi_to_rga_to_venc(); //VI → RGA → VENC 系统自动转发
-    vi_rga_bind_register_cb();//VI → RGA → callback 拦截 → 手动发 VENC 
-    venc_reg();
+    //vi_rga_bind_register_cb();//VI → RGA → callback 拦截 → 手动发 VENC 
+    venc_fengzhaung_reg();
+    
+    
 
     ai_set();
     aenc_ai_set();
     ai_to_aenc();
+    ai_tofengzhuang_aenc();
     aenc_call();
-  
+    muxer_set();
     while(1)
     {}
 
