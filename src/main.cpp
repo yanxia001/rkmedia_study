@@ -17,9 +17,9 @@ int main()
     //初始化
     RK_MPI_SYS_Init();
     //isp设置
-    SAMPLE_COMM_ISP_Init(0,RK_AIQ_WORKING_MODE_NORMAL,RK_FALSE,"/oem/etc/iqfiles");
-    SAMPLE_COMM_ISP_Run(0);
-    SAMPLE_COMM_ISP_SetFrameRate(0,30);
+    // SAMPLE_COMM_ISP_Init(0,RK_AIQ_WORKING_MODE_NORMAL,RK_FALSE,"/oem/etc/iqfiles");
+    // SAMPLE_COMM_ISP_Run(0);
+    // SAMPLE_COMM_ISP_SetFrameRate(0,30);
 
     //fp = fopen("./test.h265","w+");
 
@@ -50,25 +50,26 @@ int main()
     // test();
 
 
-    init_rtsp();//推流
+    // init_rtsp();//推流
     
-    vi_set();
-    venc_set(IMAGE_TYPE_NV12,1920,1080);
-    vi_to_venc();
-    vi_todengzhuang_venc();
-    //rga_venc();
-    //vi_to_rga_to_venc(); //VI → RGA → VENC 系统自动转发
-    //vi_rga_bind_register_cb();//VI → RGA → callback 拦截 → 手动发 VENC 
-    venc_fengzhaung_reg();
+    // vi_set();
+    // venc_set(IMAGE_TYPE_NV12,1920,1080);
+    // vi_to_venc();
+    // vi_todengzhuang_venc();
+    // //rga_venc();
+    // //vi_to_rga_to_venc(); //VI → RGA → VENC 系统自动转发
+    // //vi_rga_bind_register_cb();//VI → RGA → callback 拦截 → 手动发 VENC 
+    // venc_fengzhaung_reg();
     
     
 
-    ai_set();
-    aenc_ai_set();
-    ai_to_aenc();
-    ai_tofengzhuang_aenc();
-    aenc_call();
-    muxer_set();
+    // ai_set();
+    // aenc_ai_set();
+    // ai_to_aenc();
+    // ai_tofengzhuang_aenc();
+    // aenc_call();
+    // muxer_set();
+    aac_dec_ao();
     while(1)
     {}
 

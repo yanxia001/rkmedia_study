@@ -18,6 +18,16 @@ extern "C"
 #include "rkmedia_api.h" 
 #include "librtsp/rtsp_demo.h"
 
+
+#include <stdio.h>
+#include <libavformat/avformat.h>
+#include <libavdevice/avdevice.h>
+#include <libavcodec/avcodec.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+
 }
 
 #include "opencv2/opencv.hpp"

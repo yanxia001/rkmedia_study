@@ -1,12 +1,3 @@
-# 瑞芯微 RV1126/RV1109 音视频采集与编码 demo
-
-基于 **Rockchip RV1126/RV1109** 平台的嵌入式音视频多媒体 demo 项目，演示了摄像头视频采集、H.264 硬编码、RTSP 推流、FLV 封装存储、RGA 硬件加速图像转换、OpenCV 文字叠加以及音频采集与编码等功能。
-
-## 功能特性
-
-### 音频
-- **音频采集 (AI)**：通过 `default:CARD=Device` 节点采集麦克风输入，8000Hz / 单声道 / S16 格式
-- **音频编码 (AENC)**：G711A 编码，64000bps 码率，双通道（ch0 供封装，ch1 供 RTSP 推流）
 - **音频播放 (AO)**：通过 `rockchipi2s0sou` I2S 数字音频接口输出
 - **音频直通**：将 AI 通道直接绑定到 AO 通道，实现麦克风 → 扬声器的实时音频环回（已注释）
 
@@ -289,6 +280,13 @@ vi_set() → rga_venc() → vi_to_rga_to_venc()           # 自动路径：VI→
   网卡自动获取 IP（IP 地址、子网掩码、默认网关、DNS 等）。这是让ifconfig的ip显示出来
 6. 还有vm的的网络设置，先在虚拟网络编辑器中修改桥接模式的网卡信息
 7. 在linux中修改网络连接。
+
+# 对于ffmpeg在ubuntu的一个移植
+1. 首先下载ffmpeg的库
+2. 解压tar -xvf ffmpeg-4.3.6.tar.xz
+3. 在解压后的文件夹下./configure --target-os=linux --prefix=/home/jinli/ffmpeg_install --arch=x86_64 --disable-doc --enable-libx264 --enable-libmp3lame --enable-libopus --enable-debug=3 --extra-cflags="" --extra-ldflags="" --enable-alsa   --enable-gpl --enable-opengl --enable-sdl2 --enable-avdevice --enable-indev=v4l2  --enable-shared --disable-static --enable-nonfree --enable-libfdk-aac 进行配置
+4. make -j16 && make install -j16进行编译
+   
 
 # 对于项目到现在的一点总结（会更新）
 

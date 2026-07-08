@@ -496,6 +496,7 @@ CMakeFiles/mymain.dir/src/fengzhuang.cpp.o
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/sigthread.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/ss_flags.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/stat.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/statx.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/stdint-intn.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/stdint-uintn.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/stdio-ldbl.h
@@ -575,6 +576,34 @@ CMakeFiles/mymain.dir/src/fengzhuang.cpp.o
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/getopt.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/gnu/stubs-hard.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/gnu/stubs.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/inttypes.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavcodec/avcodec.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavdevice/avdevice.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavdevice/version.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavformat/avformat.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavformat/avio.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavformat/version.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/attributes.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/avconfig.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/avutil.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/buffer.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/channel_layout.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/common.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/cpu.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/dict.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/error.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/frame.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/hwcontext.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/intfloat.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/log.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/macros.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/mathematics.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/mem.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/opt.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/pixfmt.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/rational.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/samplefmt.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/version.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/limits.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/linux/errno.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/linux/falloc.h
@@ -631,7 +660,6 @@ CMakeFiles/mymain.dir/src/fengzhuang.cpp.o
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/any.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/autotuned_index.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/composite_index.h
- /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/config.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/defines.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/dist.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/dynamic_bitset.h
@@ -816,6 +844,7 @@ CMakeFiles/mymain.dir/src/fengzhuang.cpp.o
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/strings.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/sys/cdefs.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/sys/select.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/sys/stat.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/sys/types.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/sys/ucontext.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/time.h
@@ -881,6 +910,7 @@ CMakeFiles/mymain.dir/src/hxy_adio.cpp.o
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/sigthread.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/ss_flags.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/stat.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/statx.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/stdint-intn.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/stdint-uintn.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/stdio-ldbl.h
@@ -960,6 +990,34 @@ CMakeFiles/mymain.dir/src/hxy_adio.cpp.o
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/getopt.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/gnu/stubs-hard.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/gnu/stubs.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/inttypes.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavcodec/avcodec.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavdevice/avdevice.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavdevice/version.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavformat/avformat.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavformat/avio.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavformat/version.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/attributes.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/avconfig.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/avutil.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/buffer.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/channel_layout.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/common.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/cpu.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/dict.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/error.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/frame.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/hwcontext.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/intfloat.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/log.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/macros.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/mathematics.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/mem.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/opt.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/pixfmt.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/rational.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/samplefmt.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/version.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/limits.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/linux/errno.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/linux/falloc.h
@@ -1016,7 +1074,6 @@ CMakeFiles/mymain.dir/src/hxy_adio.cpp.o
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/any.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/autotuned_index.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/composite_index.h
- /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/config.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/defines.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/dist.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/dynamic_bitset.h
@@ -1201,6 +1258,7 @@ CMakeFiles/mymain.dir/src/hxy_adio.cpp.o
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/strings.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/sys/cdefs.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/sys/select.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/sys/stat.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/sys/types.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/sys/ucontext.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/time.h
@@ -1265,6 +1323,7 @@ CMakeFiles/mymain.dir/src/hxy_media.cpp.o
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/sigthread.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/ss_flags.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/stat.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/statx.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/stdint-intn.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/stdint-uintn.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/stdio-ldbl.h
@@ -1344,6 +1403,34 @@ CMakeFiles/mymain.dir/src/hxy_media.cpp.o
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/getopt.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/gnu/stubs-hard.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/gnu/stubs.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/inttypes.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavcodec/avcodec.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavdevice/avdevice.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavdevice/version.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavformat/avformat.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavformat/avio.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavformat/version.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/attributes.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/avconfig.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/avutil.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/buffer.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/channel_layout.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/common.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/cpu.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/dict.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/error.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/frame.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/hwcontext.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/intfloat.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/log.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/macros.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/mathematics.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/mem.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/opt.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/pixfmt.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/rational.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/samplefmt.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/version.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/limits.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/linux/errno.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/linux/falloc.h
@@ -1400,7 +1487,6 @@ CMakeFiles/mymain.dir/src/hxy_media.cpp.o
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/any.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/autotuned_index.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/composite_index.h
- /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/config.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/defines.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/dist.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/dynamic_bitset.h
@@ -1585,6 +1671,7 @@ CMakeFiles/mymain.dir/src/hxy_media.cpp.o
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/strings.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/sys/cdefs.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/sys/select.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/sys/stat.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/sys/types.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/sys/ucontext.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/time.h
@@ -1652,6 +1739,7 @@ CMakeFiles/mymain.dir/src/main.cpp.o
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/sigthread.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/ss_flags.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/stat.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/statx.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/stdint-intn.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/stdint-uintn.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/stdio-ldbl.h
@@ -1731,6 +1819,34 @@ CMakeFiles/mymain.dir/src/main.cpp.o
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/getopt.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/gnu/stubs-hard.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/gnu/stubs.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/inttypes.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavcodec/avcodec.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavdevice/avdevice.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavdevice/version.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavformat/avformat.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavformat/avio.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavformat/version.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/attributes.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/avconfig.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/avutil.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/buffer.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/channel_layout.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/common.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/cpu.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/dict.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/error.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/frame.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/hwcontext.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/intfloat.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/log.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/macros.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/mathematics.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/mem.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/opt.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/pixfmt.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/rational.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/samplefmt.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/libavutil/version.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/limits.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/linux/errno.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/linux/falloc.h
@@ -1787,7 +1903,6 @@ CMakeFiles/mymain.dir/src/main.cpp.o
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/any.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/autotuned_index.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/composite_index.h
- /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/config.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/defines.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/dist.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/opencv2/flann/dynamic_bitset.h
@@ -1972,6 +2087,7 @@ CMakeFiles/mymain.dir/src/main.cpp.o
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/strings.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/sys/cdefs.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/sys/select.h
+ /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/sys/stat.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/sys/types.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/sys/ucontext.h
  /home/hxy/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/buildroot/output/rockchip_rv1126_rv1109_spi_nand/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/time.h

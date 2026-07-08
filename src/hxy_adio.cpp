@@ -40,8 +40,8 @@ void ao_set()
     AO_CHN_ATTR_S ch ;
     ch.pcAudioNode = "default:CARD=rockchipi2s0sou";//输出设备
     ch.enSampleFormat = RK_SAMPLE_FMT_S16 ;//采样格式
-    ch.u32Channels = 1;//双声道
-    ch.u32SampleRate = 8000 ; //采样率
+    ch.u32Channels = 2;//双声道
+    ch.u32SampleRate = 48000 ; //采样率
     ch.u32NbSamples = 1024 ;//每一帧的采样点个数
     if(RK_MPI_AO_SetChnAttr(1,&ch))
     {
@@ -171,4 +171,79 @@ void test()
         RK_MPI_MB_ReleaseBuffer(mb);
         usleep(5000);
     }
+}
+
+
+void aac_dec_ao()
+{
+    //首先打开解码器
+    AVCodecContext *ct = avcodec_alloc_context3(NULL);
+    ct->channels = 2 ;//声道数
+    ct->channel_layout = AV_CH_LAYOUT_STEREO;//声道布局
+    ct->sample_fmt = AV_SAMPLE_FMT_S16; //采样格式
+    ct->sample_rate = 48000;//采样率
+    ct->frame_size = 1024;//每帧采样点数
+    ct->bit_rate = 64000;//比特率
+
+    AVCodec *decoder = avcodec_find_decoder_by_name("libfdk_aac");
+    if(avcodec_open2(ct,decoder,NULL) == 0)
+    {
+        printf("打开解码器成功~~~\n");
+    }
+     else
+    {
+        printf("打开解码器失败!!!!!\n");
+        return ;
+    }
+
+
+    //ao
+    AO_CHN_ATTR_S ch ;
+    ch.pcAudioNode = "default";
+    ch.enSampleFormat = RK_SAMPLE_FMT_S16;
+    ch.u32Channels = 2;
+    ch.u32NbSamples = 1024;
+    ch.u32SampleRate = 48000;
+    RK_MPI_AO_SetChnAttr(0,&ch);
+    RK_MPI_AO_EnableChn(0);
+
+    /*循环从文件中读取 送去解码器解码, 解码后的数据给 ao*/
+
+    int fd = open("/201/0708ffmpeg/test.aac",O_RDONLY);
+    if(fd == -1){
+        printf("音频文件打不开!!!!!!\n");
+        return ;
+    }
+    ao_set();
+    uint8_t buf[4096];
+
+    AVPacket *packet = av_packet_alloc();
+    packet->data = buf;
+    AVFrame *frame = av_frame_alloc();
+    int wcnt,ret;
+    MB_AUDIO_INFO_S infor = {2,48000,1024,RK_SAMPLE_FMT_S16};
+    MEDIA_BUFFER mb;
+    
+    while(1){
+        wcnt = read(fd,buf,sizeof(buf));
+
+        if(wcnt == 0)
+            break;
+
+        packet->size = wcnt;
+        ret = avcodec_send_packet(ct,packet);//送去解码
+        
+        while(1)
+        {
+        //从解码器获取数据
+            if(avcodec_receive_frame(ct,frame))
+                break;
+            printf("已取到解码音频!!\n");
+        //送到 ao
+            mb = RK_MPI_MB_CreateAudioBufferExt(&infor,RK_FALSE,0);
+            memcpy(RK_MPI_MB_GetPtr(mb),frame->data[0],frame->linesize[0]);
+            RK_MPI_SYS_SendMediaBuffer(RK_ID_AO,1,mb);
+            RK_MPI_MB_ReleaseBuffer(mb);
+        }
+ }
 }
