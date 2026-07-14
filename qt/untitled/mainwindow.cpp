@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
     //创建一个vlc实例
     libvlc_instance_t * ch = libvlc_new(0,NULL);
     //创建vlc媒体 rtsp://192.168.100.75/9203
-    libvlc_media_t * md =libvlc_media_new_location(ch,"rtsp://192.168.100.75/9203");
+    libvlc_media_t * md =libvlc_media_new_location(ch,"rtsp://192.168.100.75/live/main_stream");
     //播放本地文件
     //libvlc_media_t * md = libvlc_media_new_path(ch,"");
     //创建媒体播放器

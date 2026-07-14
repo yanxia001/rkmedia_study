@@ -1,6 +1,9 @@
 #include "common.h"
 rtsp_demo_handle g_rtsplive = NULL;
 rtsp_session_handle g_rtsp_session;
+
+rtsp_demo_handle g_rtsplive1 = NULL;
+rtsp_session_handle g_rtsp_session1;
 void vi_set()
 {
     VI_CHN_ATTR_S pstChnAttr;
@@ -92,9 +95,50 @@ void venc_set(IMAGE_TYPE_E image,int w,int h)
     ch.stRcAttr.stH264Vbr.fr32DstFrameRateDen =1;
     ch.stRcAttr.stH264Vbr.fr32DstFrameRateNum =30;
     ch.stRcAttr.stH264Vbr.u32MaxBitRate =w*h;//最大码率
+    RK_MPI_VENC_CreateChn(2,&ch);
+    ret = RK_MPI_VENC_CreateChn(0,&ch);//main
+    
+    if(ret)
+    {
+        printf("shibai");
+        return ;
+    }
+    printf("success");
 
-    ret = RK_MPI_VENC_CreateChn(0,&ch);
-    RK_MPI_VENC_CreateChn(1,&ch);
+
+}
+//设置venc的值
+void venc_son_set(IMAGE_TYPE_E image,int w,int h)
+{
+    int ret;
+    VENC_CHN_ATTR_S ch;
+    ch.stVencAttr.enType = RK_CODEC_TYPE_H264;//编码格式
+    ch.stVencAttr.imageType = image;//采集的图片的格式
+    ch.stVencAttr.u32VirWidth =w;
+    ch.stVencAttr.u32VirHeight = h ;
+    ch.stVencAttr.u32Profile = 77 ; //主流编码等级    
+    ch.stVencAttr.u32PicWidth = w;//编码图像宽度
+    ch.stVencAttr.u32PicHeight = h;
+    
+    // ch.stRcAttr.enRcMode = VENC_RC_MODE_H265VBR;
+    // ch.stRcAttr.stH265Vbr.u32Gop =30;//i帧间隔
+    // ch.stRcAttr.stH265Vbr.u32SrcFrameRateDen =1;
+    // ch.stRcAttr.stH265Vbr.u32SrcFrameRateNum =30;
+    // ch.stRcAttr.stH265Vbr.fr32DstFrameRateDen =1;
+    // ch.stRcAttr.stH265Vbr.fr32DstFrameRateNum =30;
+    // ch.stRcAttr.stH265Vbr.u32MaxBitRate =w*h;//最大码率
+
+
+    ch.stRcAttr.enRcMode = VENC_RC_MODE_H264VBR;
+    ch.stRcAttr.stH264Vbr.u32Gop =30;//i帧间隔
+    ch.stRcAttr.stH264Vbr.u32SrcFrameRateDen =1;
+    ch.stRcAttr.stH264Vbr.u32SrcFrameRateNum =30;
+    ch.stRcAttr.stH264Vbr.fr32DstFrameRateDen =1;
+    ch.stRcAttr.stH264Vbr.fr32DstFrameRateNum =30;
+    ch.stRcAttr.stH264Vbr.u32MaxBitRate =w*h;//最大码率
+
+    ret = RK_MPI_VENC_CreateChn(1,&ch);//main
+    
     if(ret)
     {
         printf("shibai");
@@ -109,7 +153,35 @@ int num  = 0;
 //什么时候进 一帧调一次
 
 // 回调函数
-void vi_venc_fun(MEDIA_BUFFER ch)
+void vi_venc_main_fun(MEDIA_BUFFER ch)
+{
+    // 记录计数
+    // if (num < 300)
+    // {
+    //     // 只有前 300 帧才写入文件
+    //     fwrite(RK_MPI_MB_GetPtr(ch), RK_MPI_MB_GetSize(ch), 1, fp);
+    //     printf("venc 获取到的画面的大小:%d  num= %d\n", RK_MPI_MB_GetSize(ch), num);
+    //     num++;
+    // }
+    // else
+    // {
+    //    exit(0);
+    // }
+        if (g_rtsplive1 && g_rtsp_session1) {
+        rtsp_tx_video(g_rtsp_session1,(const uint8_t *)RK_MPI_MB_GetPtr(ch), RK_MPI_MB_GetSize(ch),
+                  RK_MPI_MB_GetTimestamp(ch));
+        rtsp_do_event(g_rtsplive1);
+  }
+
+    RK_MPI_MB_ReleaseBuffer(ch);
+    
+
+ 
+}
+
+
+// 回调函数
+void vi_venc_son_fun(MEDIA_BUFFER ch)
 {
     // 记录计数
     // if (num < 300)
@@ -135,23 +207,34 @@ void vi_venc_fun(MEDIA_BUFFER ch)
  
 }
 
-void venc_reg()
+void venc_main_reg()//主流推流
 {
     MPP_CHN_S ch;
     ch.enModId = RK_ID_VENC;
     ch.s32DevId = 0;
     ch.s32ChnId = 0;
-    //RK_MPI_SYS_RegisterOutCb(&ch,vi_venc_fun);
+    RK_MPI_SYS_RegisterOutCb(&ch,vi_venc_main_fun);
 }
 
-void venc_fengzhaung_reg()
+
+void venc_son_reg()//子流推流
 {
     MPP_CHN_S ch;
     ch.enModId = RK_ID_VENC;
     ch.s32DevId = 0;
     ch.s32ChnId = 1;
-    RK_MPI_SYS_RegisterOutCb(&ch,vi_venc_fun);
+    RK_MPI_SYS_RegisterOutCb(&ch,vi_venc_son_fun);
 }
+
+
+// void venc_fengzhaung_reg()
+// {
+//     MPP_CHN_S ch;
+//     ch.enModId = RK_ID_VENC;
+//     ch.s32DevId = 0;
+//     ch.s32ChnId = 2;
+//     RK_MPI_SYS_RegisterOutCb(&ch,vi_venc_fun);
+// }
 
 
 void vi_to_venc()
@@ -175,7 +258,7 @@ void vi_todengzhuang_venc()
     src.s32DevId = 0 ;
 
     dest.enModId = RK_ID_VENC;
-    dest.s32ChnId = 1;
+    dest.s32ChnId = 2;
     dest.s32DevId = 0;
     RK_MPI_SYS_Bind(&src,&dest);
 }
@@ -223,7 +306,7 @@ void vi_to_rga_to_venc()
     rga_ch.s32DevId = 0 ;
 
     venc_ch.enModId = RK_ID_VENC ;
-    venc_ch.s32ChnId = 0;
+    venc_ch.s32ChnId = 1;
     venc_ch.s32DevId = 0 ;
 
     RK_MPI_SYS_Bind(&vi_ch,&rga_ch);//连接
@@ -262,15 +345,37 @@ void vi_rga_bind_register_cb()
  
 
 
-void init_rtsp()
+void main_init_rtsp()
 {
-    g_rtsplive = create_rtsp_demo(554);
-    g_rtsp_session = rtsp_new_session(g_rtsplive, "/9203");// rtsp://ip/9203
+    g_rtsplive1 = create_rtsp_demo(554);
+    g_rtsp_session1 = rtsp_new_session(g_rtsplive1, "/live/main_stream");// rtsp://ip/9203
+    //设置视频流
+    rtsp_set_video(g_rtsp_session1, RTSP_CODEC_ID_VIDEO_H264, NULL, 0);
+    rtsp_sync_video_ts(g_rtsp_session1, rtsp_get_reltime(), rtsp_get_ntptime());
+
+
+    //设置音频流
+    //还要设置参数
+     uint8_t data[2] = {0x15, 0x88};//aac-LC 48000 双声道
+    rtsp_set_audio(g_rtsp_session1,RTSP_CODEC_ID_AUDIO_G711A,NULL, 2);
+    rtsp_sync_audio_ts(g_rtsp_session1, rtsp_get_reltime(), rtsp_get_ntptime());
+
+}//推音视频流
+
+
+void son_init_rtsp()
+{
+    g_rtsplive = create_rtsp_demo(553);
+    g_rtsp_session = rtsp_new_session(g_rtsplive, "/live/son_stream");// rtsp://ip/9203
     //设置视频流
     rtsp_set_video(g_rtsp_session, RTSP_CODEC_ID_VIDEO_H264, NULL, 0);
     rtsp_sync_video_ts(g_rtsp_session, rtsp_get_reltime(), rtsp_get_ntptime());
+
+
     //设置音频流
-    rtsp_set_audio(g_rtsp_session,RTSP_CODEC_ID_AUDIO_G711A,NULL, 0);
+    //还要设置参数
+     uint8_t data[2] = {0x15, 0x88};//aac-LC 48000 双声道
+    rtsp_set_audio(g_rtsp_session,RTSP_CODEC_ID_AUDIO_G711A,NULL, 2);
     rtsp_sync_audio_ts(g_rtsp_session, rtsp_get_reltime(), rtsp_get_ntptime());
 
 }//推音视频流

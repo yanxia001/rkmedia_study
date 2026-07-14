@@ -28,6 +28,11 @@ extern "C"
 #include <fcntl.h>
 #include <unistd.h>
 
+
+
+  #include <dirent.h>
+  #include <sys/stat.h>
+  #include <string.h>
 }
 
 #include "opencv2/opencv.hpp"

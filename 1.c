@@ -6,15 +6,57 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <stdio.h>
+#include <sys/types.h> /* See NOTES */
+#include <sys/socket.h>
+#include <unistd.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <netinet/ip.h>
 //上下文 ---结构体
+
+
 int main ()
 {
+    //客户端设计
+    int kehu = socket(AF_INET,SOCK_STREAM,0);
+    if(kehu <0)
+    {
+        perror("socket");
+        return -1;
+    }
+
+    struct sockaddr_in seraddr;
+    seraddr.sin_family = AF_INET;
+    //端口 80 是小端序,成员 sin_port 要的是大端序,
+    //需要借助 htons 将小端序转为大端序
+    seraddr.sin_port = htons(6556);
+    //"116.62.81.138"是点分十进制
+    //sin_addr 需要大端序整数 IP 借助 inet_aton 转换
+    inet_aton("192.168.100.75",&seraddr.sin_addr);
+    int ret = connect(kehu,(struct sockaddr *)&seraddr,sizeof(seraddr));
+    if(ret == -1)
+    {
+        perror("connect");
+        return -1;
+    }
+    printf("连接服务器成功\n");
+
+
+
+
     //注册音频设备
     avdevice_register_all();
     //音频的采集
     AVFormatContext * a = avformat_alloc_context();
+
+    AVDictionary *options = NULL;
+    av_dict_set(&options, "sample_rate", "48000", 0);
+    av_dict_set(&options, "channels", "2", 0);
+    av_dict_set(&options, "sample_fmt", "s16", 0);
+
     AVInputFormat * a_input = av_find_input_format("alsa");
-    if(avformat_open_input(&a,"default",a_input,NULL))//打开一个输入设备
+    if(avformat_open_input(&a,"default",a_input,&options))//打开一个输入设备
     {
         printf("打开失败\n");
     }
@@ -43,7 +85,7 @@ int main ()
         printf("已找到编码器\n");
     }
 
-    if(avcodec_open2(c,c1,NULL))//打开编码器
+    if(avcodec_open2(c,c1,NULL) == 0)//打开编码器
     {
         printf("打开编码器成功~~~\n");
     }
@@ -64,9 +106,9 @@ int main ()
     int cnt = 0;
 
 
-    int fd = open("test.aac",O_WRONLY|O_CREAT|O_TRUNC,0644);
+    // int fd = open("test.aac",O_WRONLY|O_CREAT|O_TRUNC,0644);
 
-
+    int n = 0;
     while(1)
     {
         //从麦克风读数据
@@ -91,7 +133,10 @@ int main ()
             if(avcodec_receive_packet(c,encPacket))
                 break;
             // 把编码后的数据写入文件
-            write(fd,encPacket->data,encPacket->size);
+            n++;
+            int a = write(kehu,encPacket->data,encPacket->size);
+            printf("写入%d     %d\n",a,n);
+            printf("encPacket %d \n",encPacket->size);
         }
     }
     return 0;

@@ -11,10 +11,14 @@ void rga_venc();
 
 void vi_to_rga_to_venc();
 void vi_rga_bind_register_cb();
-void init_rtsp();
+void main_init_rtsp();
+void son_init_rtsp();
 void venc_fengzhaung_reg();
-
+void venc_main_reg();
+void venc_son_reg();
 void vi_todengzhuang_venc();
+
+void venc_son_set(IMAGE_TYPE_E ,int ,int );
 #endif
 
 
